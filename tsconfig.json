@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "commonjs",
+		"outDir": ".",
+		"rootDir": "backend-src",
+		"removeComments": true,
+		"noEmitHelpers": false,
+		"strict": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"baseUrl": "./",
+		"typeRoots": [
+			"./backend-src/types",
+			"./node_modules/@types",
+			"./node_modules/@typescript-eslint/eslint-plugin",
+			"./node_modules/@typescript-eslint/parser"
+		],
+		"types": ["node", "jest"],
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"ts-node": {
+		"transpileOnly": true,
+		"files": true,
+		"emit": false
+	},
+	"exclude": ["frontend", "public", "node_modules", "./backend-src/backend/tests"]
+}

@@ -1,0 +1,896 @@
+{
+    "_id": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+    "colName": "API",
+    "created": "2023-04-28T03:41:38.215Z",
+    "sortNum": 10000,
+    "folders": [
+        {
+            "_id": "d3513404-e9f6-4227-86d6-84d84c2ffe35",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2023-04-28T03:41:46.270Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+            "name": "Master",
+            "containerId": "",
+            "created": "2023-05-06T13:08:53.382Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "ec514c92-827f-4571-b769-ab11c32fe0f1",
+            "name": "LIFF",
+            "containerId": "",
+            "created": "2023-05-06T13:08:59.381Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "0e4b5065-375b-4b39-81c1-ffa845c43362",
+            "name": "Public",
+            "containerId": "",
+            "created": "2023-05-11T00:44:56.993Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "2cf917bf-a6d8-4f28-a1c9-93dfb762866d",
+            "name": "Audience",
+            "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+            "created": "2023-05-16T05:38:31.826Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "4dc36ef5-f16a-46ae-87fb-e4fe7870ff09",
+            "name": "Spectator",
+            "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+            "created": "2023-05-16T05:38:41.399Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "ed74cf00-16de-4c4d-b2d6-20803bcbc3df",
+            "name": "Richmenu",
+            "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+            "created": "2023-05-16T05:38:46.531Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "8651118e-98ba-4b9a-83ed-657838c32337",
+            "name": "Member",
+            "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+            "created": "2023-05-16T05:38:50.697Z",
+            "sortNum": 80000
+        },
+        {
+            "_id": "2bf8942d-c568-4a1b-b792-0abece160956",
+            "name": "Settings",
+            "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+            "created": "2023-05-16T05:39:01.648Z",
+            "sortNum": 90000
+        },
+        {
+            "_id": "f892988d-2fc6-4e84-b355-9527f162df91",
+            "name": "Template",
+            "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+            "created": "2023-05-16T05:39:11.145Z",
+            "sortNum": 100000
+        },
+        {
+            "_id": "4b10b435-2109-4068-a8f8-b1062806a065",
+            "name": "Chat",
+            "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+            "created": "2023-05-19T09:49:46.594Z",
+            "sortNum": 110000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3d3a64af-a393-4ab4-ae71-65051f059f06",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "d3513404-e9f6-4227-86d6-84d84c2ffe35",
+            "name": "Master Login",
+            "url": "{{base_url}}/api/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-28T03:41:52.787Z",
+            "modified": "2023-04-28T03:43:33.332Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"test_admin\",\n  \"password\": \"testtest1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "97cd3d09-23e4-4185-8226-735a61b4acd7",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "d3513404-e9f6-4227-86d6-84d84c2ffe35",
+            "name": "Check Session",
+            "url": "{{base_url}}/api/auth/sess",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-28T06:14:26.489Z",
+            "modified": "2023-04-28T06:14:40.478Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b1584c4b-2ff0-4486-b790-275b5dc05879",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "8651118e-98ba-4b9a-83ed-657838c32337",
+            "name": "Browse members",
+            "url": "{{base_url}}/api/m/members?isFriends&displayName&name&address&dateOfBirthMin&dateOfBirthMax&lastVisitMin&lastVisitMax&occupation&countVisitMin&countVisitMax&memberSinceMin&memberSinceMax&telephone&gender&activeMin&activeMax&remarks&serviceTypes&serviceAreas[]=buy&serviceAreas[]=sell",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-05-06T13:09:05.760Z",
+            "modified": "2023-05-22T10:45:12.808Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "isFriends",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "displayName",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "name",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "address",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "dateOfBirthMin",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "dateOfBirthMax",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "lastVisitMin",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "lastVisitMax",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "occupation",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "countVisitMin",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "countVisitMax",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "memberSinceMin",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "memberSinceMax",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "telephone",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "activeMin",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "activeMax",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "remarks",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "serviceTypes",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "serviceAreas[]",
+                    "value": "buy",
+                    "isPath": false
+                },
+                {
+                    "name": "serviceAreas[]",
+                    "value": "sell",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6a830ed7-46bc-45c6-9759-a82a093abb8e",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "d3513404-e9f6-4227-86d6-84d84c2ffe35",
+            "name": "Master Logout",
+            "url": "{{base_url}}/api/auth/logout",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-09T13:31:32.324Z",
+            "modified": "2023-05-09T13:31:41.996Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f57f1c1d-394f-4824-851a-d72fed0b3ed2",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "0e4b5065-375b-4b39-81c1-ffa845c43362",
+            "name": "Get logo",
+            "url": "{{base_url}}/api/logo",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-05-11T07:17:12.301Z",
+            "modified": "2023-05-11T07:52:14.884Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a6b0a8b4-3882-4a4d-a600-93f96fc4fff4",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "0e4b5065-375b-4b39-81c1-ffa845c43362",
+            "name": "Get favicon",
+            "url": "{{base_url}}/api/favicon",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-11T07:52:16.396Z",
+            "modified": "2023-05-11T07:52:20.825Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a5c76012-7246-4083-b976-f596858f0bb5",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "0e4b5065-375b-4b39-81c1-ffa845c43362",
+            "name": "Get settings",
+            "url": "{{base_url}}/api/settings",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-11T07:52:17.491Z",
+            "modified": "2023-05-11T07:52:45.907Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a2bc17be-9ee2-437f-9eca-3c2908f0182c",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "0e4b5065-375b-4b39-81c1-ffa845c43362",
+            "name": "Get store pic",
+            "url": "{{base_url}}/api/store/pic",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2023-05-12T07:49:45.107Z",
+            "modified": "2023-05-12T07:49:56.169Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "20b50760-2cc9-47da-9dc6-36bcc4e70217",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "8651118e-98ba-4b9a-83ed-657838c32337",
+            "name": "List members",
+            "url": "{{base_url}}/api/m/members/list",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-12T09:30:22.234Z",
+            "modified": "2023-05-16T05:38:54.255Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "eb89611b-0dd0-41bd-837d-da101c71040e",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "8651118e-98ba-4b9a-83ed-657838c32337",
+            "name": "Get member",
+            "url": "{{base_url}}/api/m/members/:memberId",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-12T09:55:01.405Z",
+            "modified": "2023-05-16T05:38:55.208Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "23f4db49-2ae6-4c47-89eb-ff2d29bf4160",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "8651118e-98ba-4b9a-83ed-657838c32337",
+            "name": "Delete member",
+            "url": "{{base_url}}/api/m/members/:memberId",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-05-12T09:55:14.893Z",
+            "modified": "2023-05-16T05:38:57.190Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a9f3986f-6fcb-4d87-afbb-34445569cbb3",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "8651118e-98ba-4b9a-83ed-657838c32337",
+            "name": "Get member by barcode",
+            "url": "{{base_url}}/api/m/members/barcode",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-05-12T09:55:43.342Z",
+            "modified": "2023-05-16T05:38:56.234Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"memberCode\":\"123123123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4010bb88-4293-45e2-8238-e8d6756d9dd2",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "f892988d-2fc6-4e84-b355-9527f162df91",
+            "name": "Browse template",
+            "url": "{{base_url}}/api/m/templates?name&contents&description",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-05-16T05:40:29.724Z",
+            "modified": "2023-05-23T02:25:02.987Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "contents",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "description",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "a386d9dd-f877-41be-9e95-17b774341d4e",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "f892988d-2fc6-4e84-b355-9527f162df91",
+            "name": "Create template",
+            "url": "{{base_url}}/api/m/templates",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-05-16T05:44:40.977Z",
+            "modified": "2023-05-16T05:45:25.108Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"test template\",\n  \"contents\": \"tets contents\",\n  \"description\": \"this is a test templates\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "88039a33-d20e-4edd-889a-1d1c7ca6b9c6",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "f892988d-2fc6-4e84-b355-9527f162df91",
+            "name": "Get template",
+            "url": "{{base_url}}/api/m/templates/1",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-05-16T05:49:52.144Z",
+            "modified": "2023-05-16T05:50:00.705Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "24478e6b-5f1c-46ff-8386-aabcdfd0a634",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "f892988d-2fc6-4e84-b355-9527f162df91",
+            "name": "Update template",
+            "url": "{{base_url}}/api/m/templates/1",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-05-16T05:50:14.710Z",
+            "modified": "2023-05-16T05:50:33.270Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"test template 1\",\n  \"contents\": \"tets contents\",\n  \"description\": \"this is a test templates\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c8306abd-7879-4fd3-8aef-4bb517a12122",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "f892988d-2fc6-4e84-b355-9527f162df91",
+            "name": "Delete template",
+            "url": "{{base_url}}/api/m/templates/1",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2023-05-16T05:50:49.416Z",
+            "modified": "2023-05-16T05:50:52.789Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dbe3a8d7-a8a1-4959-8836-a84d4e8b50b7",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "ed74cf00-16de-4c4d-b2d6-20803bcbc3df",
+            "name": "List richmenu",
+            "url": "{{base_url}}/api/m/richmenus",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-05-16T07:20:57.600Z",
+            "modified": "2023-05-16T07:22:21.463Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6977a038-720c-42be-b628-c83806aa44c3",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "ed74cf00-16de-4c4d-b2d6-20803bcbc3df",
+            "name": "Update richmenu properties",
+            "url": "{{base_url}}/api/m/richmenus/props",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2023-05-16T07:21:47.164Z",
+            "modified": "2023-05-16T07:23:23.414Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "rmType",
+                        "value": "defaultRM"
+                    },
+                    {
+                        "name": "isDisplayed",
+                        "value": "true"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0c5d35f5-4884-4ec5-8efc-4414dc46091d",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "ed74cf00-16de-4c4d-b2d6-20803bcbc3df",
+            "name": "Set richmenu ",
+            "url": "{{base_url}}/api/m/richmenus",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2023-05-16T07:23:36.741Z",
+            "modified": "2023-05-16T07:27:15.293Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "type",
+                        "value": ""
+                    },
+                    {
+                        "name": "link1",
+                        "value": ""
+                    },
+                    {
+                        "name": "link2",
+                        "value": ""
+                    },
+                    {
+                        "name": "link3",
+                        "value": ""
+                    },
+                    {
+                        "name": "link4",
+                        "value": ""
+                    },
+                    {
+                        "name": "link5",
+                        "value": ""
+                    },
+                    {
+                        "name": "link6",
+                        "value": ""
+                    },
+                    {
+                        "name": "isDisplayed",
+                        "value": ""
+                    }
+                ],
+                "files": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "44adcf65-105a-4f7a-8258-dc298b2de95d",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "2bf8942d-c568-4a1b-b792-0abece160956",
+            "name": "List system settings",
+            "url": "{{base_url}}/api/m/settings",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-05-16T07:50:37.983Z",
+            "modified": "2023-05-16T07:50:56.465Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "06cf1033-a829-4630-ac84-b29eff2d6f1f",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "2bf8942d-c568-4a1b-b792-0abece160956",
+            "name": "Get system setting",
+            "url": "{{base_url}}/api/m/settings/test",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-05-16T07:51:06.859Z",
+            "modified": "2023-05-16T07:54:01.775Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e2cf9da0-a4f2-4195-8ad6-2bdfa0760be9",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "2bf8942d-c568-4a1b-b792-0abece160956",
+            "name": "Bulk Set system setting",
+            "url": "{{base_url}}/api/m/settings",
+            "method": "PUT",
+            "sortNum": 150000,
+            "created": "2023-05-16T07:51:43.625Z",
+            "modified": "2023-05-16T07:55:12.993Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"settings\": [\n    {\n      \"name\": \"test\",\n      \"label\": \"test settings\",\n      \"valueFlag\": null,\n      \"valueString\": null,\n      \"valueNumber\": 1,\n      \"isPublic\": true\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "626b48ae-35ef-40b7-96c7-69388ad5eeee",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "2cf917bf-a6d8-4f28-a1c9-93dfb762866d",
+            "name": "List audience",
+            "url": "{{base_url}}/api/m/audiences",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2023-05-17T09:56:56.789Z",
+            "modified": "2023-05-17T09:57:13.840Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4d0f3a88-4189-404b-ad30-ec11f400895a",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "2cf917bf-a6d8-4f28-a1c9-93dfb762866d",
+            "name": "Search audience",
+            "url": "{{base_url}}/api/m/audiences/find",
+            "method": "POST",
+            "sortNum": 180000,
+            "created": "2023-05-17T09:57:16.747Z",
+            "modified": "2023-05-17T09:58:57.194Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\"address\": \"string\",\n\t\"memberSinceMin\": \"Date\",\n\t\"memberSinceMax\": \"Date\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "99851d3d-69b2-40c8-b800-f27e01b90db3",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "2cf917bf-a6d8-4f28-a1c9-93dfb762866d",
+            "name": "Create audience",
+            "url": "{{base_url}}/api/m/audiences",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2023-05-17T09:58:37.070Z",
+            "modified": "2023-05-17T09:59:01.165Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\"address\": \"string\",\n\t\"memberSinceMin\": \"Date\",\n\t\"memberSinceMax\": \"Date\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "99a057f4-1ea8-4a3b-b3ea-5156637b56d9",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "2cf917bf-a6d8-4f28-a1c9-93dfb762866d",
+            "name": "Delete audience",
+            "url": "{{base_url}}/api/m/audiences/:audienceGroupId",
+            "method": "DELETE",
+            "sortNum": 200000,
+            "created": "2023-05-17T09:58:54.562Z",
+            "modified": "2023-05-17T09:59:19.152Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ac8c5d20-0d52-48f2-963b-8e53cd9c1f9f",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "2bf8942d-c568-4a1b-b792-0abece160956",
+            "name": "Set logo",
+            "url": "{{base_url}}/api/m/logo",
+            "method": "PUT",
+            "sortNum": 155000,
+            "created": "2023-05-17T09:59:53.500Z",
+            "modified": "2023-05-17T10:00:41.864Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "955cc38f-a860-45a4-930d-6eeb43273c5d",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "2bf8942d-c568-4a1b-b792-0abece160956",
+            "name": "Bulk Set system setting Copy",
+            "url": "{{base_url}}/api/m/settings",
+            "method": "PUT",
+            "sortNum": 152500,
+            "created": "2023-05-17T10:00:10.892Z",
+            "modified": "2023-05-17T10:00:10.892Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"settings\": [\n    {\n      \"name\": \"test\",\n      \"label\": \"test settings\",\n      \"valueFlag\": null,\n      \"valueString\": null,\n      \"valueNumber\": 1,\n      \"isPublic\": true\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4a3b0db-0225-4e5a-8cef-b4d3f3fb7eeb",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "2bf8942d-c568-4a1b-b792-0abece160956",
+            "name": "Set favicon",
+            "url": "{{base_url}}/api/m/favicon",
+            "method": "PUT",
+            "sortNum": 165000,
+            "created": "2023-05-17T10:00:50.941Z",
+            "modified": "2023-05-17T10:01:06.423Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e947a13f-f73f-4974-a155-19d7b18a5f36",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "2bf8942d-c568-4a1b-b792-0abece160956",
+            "name": "Set store picture",
+            "url": "{{base_url}}/api/m/store/pic",
+            "method": "PUT",
+            "sortNum": 175000,
+            "created": "2023-05-17T10:01:36.235Z",
+            "modified": "2023-05-17T10:01:42.227Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "050b635e-687e-41d9-b1d9-57cc00320194",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "4dc36ef5-f16a-46ae-87fb-e4fe7870ff09",
+            "name": "List spectator candidates",
+            "url": "{{base_url}}/api/m/spectators/candidates",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2023-05-17T10:02:15.721Z",
+            "modified": "2023-05-17T10:02:32.067Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1f6a2a7b-40dd-4103-8a3e-c9712bd62ea5",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "4dc36ef5-f16a-46ae-87fb-e4fe7870ff09",
+            "name": "List spectators",
+            "url": "{{base_url}}/api/m/spectators",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2023-05-17T10:02:38.557Z",
+            "modified": "2023-05-17T10:02:51.559Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "97106a63-b477-4cce-ba47-64f114650f34",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "4dc36ef5-f16a-46ae-87fb-e4fe7870ff09",
+            "name": "Set spectators",
+            "url": "{{base_url}}/api/m/spectators",
+            "method": "POST",
+            "sortNum": 210000,
+            "created": "2023-05-17T10:02:58.976Z",
+            "modified": "2023-05-17T10:04:11.805Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"memberId\": 1\n  },\n  {\n    \"memberId\": 2\n  },\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "06357825-2cff-45f9-985a-850e5e88a5c2",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "4dc36ef5-f16a-46ae-87fb-e4fe7870ff09",
+            "name": "Delete spectator",
+            "url": "{{base_url}}/api/m/spectators/:spectatorId",
+            "method": "DELETE",
+            "sortNum": 220000,
+            "created": "2023-05-17T10:04:44.984Z",
+            "modified": "2023-05-17T10:05:12.856Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1151bae2-3cf8-4352-81c3-f050c3ba80da",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "8651118e-98ba-4b9a-83ed-657838c32337",
+            "name": "Update member",
+            "url": "{{base_url}}/api/m/members/:memberId",
+            "method": "PUT",
+            "sortNum": 45000,
+            "created": "2023-05-17T10:05:25.747Z",
+            "modified": "2023-05-17T10:34:25.879Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"memberCode\": \"123123123\",\n  \"firstName\": \"\",\n  \"lastName\": \"\",\n  \"firstNameKana\": \"\",\n  \"lastNameKana\": \"\",\n  \"dateOfBirth\": \"\",\n  \"gender\": \"string\",\n  \"point\": \"\",\n  \"email\": \"\",\n  \"telephone\": \"\",\n  \"zipPostal\": \"\",\n  \"prefecture\": \"\",\n  \"city\": \"\",\n  \"address\": \"\",\n  \"activeUntil\": \"\",\n  \"memberSince\": \"\",\n  \"remarks\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "428cf4f9-a426-4764-9608-1da3ded79496",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "ec514c92-827f-4571-b769-ab11c32fe0f1",
+            "name": "Get personal info",
+            "url": "{{base_url}}/api/liff/personal",
+            "method": "GET",
+            "sortNum": 235000,
+            "created": "2023-05-18T06:30:19.160Z",
+            "modified": "2023-05-18T06:31:32.658Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "97300f31-f271-49ab-96ff-70364e1e977e",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "ec514c92-827f-4571-b769-ab11c32fe0f1",
+            "name": "Update personal info",
+            "url": "{{base_url}}/api/liff/personal",
+            "method": "PUT",
+            "sortNum": 240000,
+            "created": "2023-05-18T06:31:11.224Z",
+            "modified": "2023-05-19T08:33:49.797Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"Bat\",\n  \"firstNameKana\": \"バト\",\n  \"lastName\": \"En\",\n  \"lastNameKana\": \"エン\",\n  \"email\":\"batam@miraic.com\",\n  \"telephone\": \"052-221-1212\",\n  \"serviceAreas\": [\"小牧市\",\"豊山町\"],\n  \"serviceTypes\": [\"buy\",\"borrow\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4f6394fc-05ab-4c42-aa23-8a5c73bfd863",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "4b10b435-2109-4068-a8f8-b1062806a065",
+            "name": "Get chat message",
+            "url": "{{base_url}}/api/m/members/chats/1",
+            "method": "GET",
+            "sortNum": 250000,
+            "created": "2023-05-19T09:49:56.635Z",
+            "modified": "2023-05-19T09:52:41.744Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "da46184a-c41e-4544-a861-0e862fdec91f",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "4b10b435-2109-4068-a8f8-b1062806a065",
+            "name": "Send chat to member",
+            "url": "{{base_url}}/api/m/members/chats/:memberId",
+            "method": "POST",
+            "sortNum": 255000,
+            "created": "2023-05-19T09:52:32.624Z",
+            "modified": "2023-05-19T09:53:20.584Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"contents\": \"test message\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "38f76fd4-4d4e-4f09-b32b-33bf6498cd7c",
+            "colId": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+            "containerId": "8651118e-98ba-4b9a-83ed-657838c32337",
+            "name": "Add Member",
+            "url": "{{base_url}}/api/m/members/add",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-07-06T05:56:23.646Z",
+            "modified": "2023-07-06T05:56:50.933Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

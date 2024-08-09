@@ -1,0 +1,87 @@
+[
+  {
+    "_id": "11c47d4f-3236-450e-bad8-b7060e97e27f",
+    "colName": "API",
+    "created": "2023-04-28T03:41:38.215Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "d3513404-e9f6-4227-86d6-84d84c2ffe35",
+        "name": "Auth",
+        "containerId": "",
+        "created": "2023-04-28T03:41:46.270Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+        "name": "Master",
+        "containerId": "",
+        "created": "2023-05-06T13:08:53.382Z",
+        "sortNum": 20000
+      },
+      {
+        "_id": "ec514c92-827f-4571-b769-ab11c32fe0f1",
+        "name": "LIFF",
+        "containerId": "",
+        "created": "2023-05-06T13:08:59.381Z",
+        "sortNum": 30000
+      },
+      {
+        "_id": "0e4b5065-375b-4b39-81c1-ffa845c43362",
+        "name": "Public",
+        "containerId": "",
+        "created": "2023-05-11T00:44:56.993Z",
+        "sortNum": 40000
+      },
+      {
+        "_id": "2cf917bf-a6d8-4f28-a1c9-93dfb762866d",
+        "name": "Audience",
+        "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+        "created": "2023-05-16T05:38:31.826Z",
+        "sortNum": 50000
+      },
+      {
+        "_id": "4dc36ef5-f16a-46ae-87fb-e4fe7870ff09",
+        "name": "Spectator",
+        "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+        "created": "2023-05-16T05:38:41.399Z",
+        "sortNum": 60000
+      },
+      {
+        "_id": "ed74cf00-16de-4c4d-b2d6-20803bcbc3df",
+        "name": "Richmenu",
+        "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+        "created": "2023-05-16T05:38:46.531Z",
+        "sortNum": 70000
+      },
+      {
+        "_id": "8651118e-98ba-4b9a-83ed-657838c32337",
+        "name": "Member",
+        "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+        "created": "2023-05-16T05:38:50.697Z",
+        "sortNum": 80000
+      },
+      {
+        "_id": "2bf8942d-c568-4a1b-b792-0abece160956",
+        "name": "Settings",
+        "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+        "created": "2023-05-16T05:39:01.648Z",
+        "sortNum": 90000
+      },
+      {
+        "_id": "f892988d-2fc6-4e84-b355-9527f162df91",
+        "name": "Template",
+        "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+        "created": "2023-05-16T05:39:11.145Z",
+        "sortNum": 100000
+      },
+      {
+        "_id": "4b10b435-2109-4068-a8f8-b1062806a065",
+        "name": "Chat",
+        "containerId": "fcb8c6ec-5e48-431b-bc4d-a54646e5a8be",
+        "created": "2023-05-19T09:49:46.594Z",
+        "sortNum": 110000
+      }
+    ]
+  }
+]

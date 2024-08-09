@@ -1,0 +1,8 @@
+export { default as AudienceService } from './audience.service'
+export { default as AuthService } from './auth.service'
+export { default as ChatService } from './chat.service'
+export { default as LineService } from './line.service'
+export { default as ManagerService } from './manager.service'
+export { default as MemberService } from './member.service'
+export { default as RichmenuService } from './richmenu.service'
+export { default as SpectatorService } from './spectator.service'

@@ -1,0 +1,15 @@
+# development@v2
+VITE_SYSTEM_TITLE=【Century21】小牧不動産_KAKERU
+VITE_APP_TEST_USER_PASSWORD="testtest1"
+VITE_APP_TEST_USER="test_admin"
+VITE_APP_ENV="DEV"
+VITE_API_URL="http://localhost:8080"
+
+# staging@v2
+VITE_SYSTEM_TITLE=Membership-System-Demo
+VITE_APP_TEST_USER_PASSWORD="testtest1"
+VITE_APP_TEST_USER="test_admin"
+VITE_APP_ENV="STAGING"
+VITE_API_URL="https://membership-demo.testweb-demo.com"
+VITE_APP_LINE_ADD_FRIEND_URL="https://lin.ee/72N0CpZ"
+VITE_APP_LINE_QR_URL="https://qr-official.line.me/gs/M_625wqria_BW.png"
